@@ -23,12 +23,14 @@ class TourItem extends HTMLElement {
       margin-bottom: 18px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       border-radius: 10px;
+      max-width : 50%;
       overflow: hidden;
+      align-item : center;
     }
     
     .fan-art-club {
-      width: 100%;
-      max-height: 300px;
+      width: 50%;
+      max-height: 200px;
       object-fit: cover;
       object-position: center;
     }
@@ -46,7 +48,7 @@ class TourItem extends HTMLElement {
       overflow: hidden;
       text-overflow: ellipsis;
       display: -webkit-box;
-      -webkit-box-orient: vertical;
+      -webkit-box-orient: horizontal;
       -webkit-line-clamp: 10; /* number of lines to show */
     }
     

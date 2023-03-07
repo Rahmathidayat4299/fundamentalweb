@@ -22,12 +22,14 @@ class SearchBar extends HTMLElement {
     render() {
       this.shadowDOM.innerHTML = `
         <style>
+    
         .search-container {
-            max-width: 800px;
-            padding: 1rem;
+            max-width: 300px;
             border-radius: 0.5rem;
+            padding : 6rem;
             display: flex;
-            position: sticky;
+            justify-content: center; /* horizontally center content */
+            align-items: center; /* vertically center content */
             top: 10px;
             background-color: #FFFFFF;
             box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -78,7 +80,7 @@ class SearchBar extends HTMLElement {
             
             .search-container button {
               width: 100%;
-              margin-left: 0;
+              margin-left: auto;
               border-radius: 0.5rem;
             }
           }
